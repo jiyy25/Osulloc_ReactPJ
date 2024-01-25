@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "seolleimcool-SemiBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.w-0 {
+  width: 0;
+  white-space: nowrap;
+}
+
+.zup {
+  z-index: 99999;
+}
+
+header {
+  font-family: "seolleimcool-SemiBold";
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0.5rem;
+  z-index: 999999;
+  color: #FFFEF1;
+}
+header .navBtn {
+  width: 35px;
+  height: 30px;
+  background: 0 0;
+  border: 0;
+}
+header .navBtn i {
+  background-color: #FFFEF1;
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1.8px;
+}
+header .navBtn i:nth-child(1) {
+  margin: 3px auto 11px;
+  animation: outT 0.8s backwards;
+  animation-direction: reverse;
+}
+header .navBtn i:nth-child(2) {
+  margin: 0 auto;
+  animation: outBtm 0.8s backwards;
+  animation-direction: reverse;
+}
+@keyframes outT {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(5px) rotate(0);
+  }
+  100% {
+    transform: translateY(5px) rotate(135deg);
+  }
+}
+@keyframes outBtm {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0);
+  }
+  100% {
+    transform: translateY(-8px) rotate(45deg);
+  }
+}
+header ul {
+  margin-bottom: 0;
+}
+header .navmn li {
+  margin: 15px;
+}
+header .icoBox li {
+  margin: 15px;
+}
+header .icoBox li img {
+  width: 20px;
+}
+header .icoBox .userIco img {
+  width: 24px;
+}
+.jyySwiper .imgBox img {
+  width: 100%;
+}

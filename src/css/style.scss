@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$seolFont: 'seolleimcool-SemiBold';
+$Wcolor: #FFFEF1;
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.w-0 {
+    width: 0;
+    white-space: nowrap;
+}
+
+.zup {
+    z-index: 99999;
+}
+
+/////////////////header zone/////////////////
+
+header {
+    font-family: $seolFont;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0.5rem;
+    z-index: 999999;
+    color: $Wcolor;
+
+    .navBtn {
+        width: 35px;
+        height: 30px;
+        background: 0 0;
+        border: 0;
+
+        i {
+            background-color: $Wcolor;
+            content: "";
+            display: block;
+            width: 95%;
+            height: 1.8px;
+
+            &:nth-child(1) {
+                margin: 3px auto 11px;
+                animation: outT .8s backwards;
+                animation-direction: reverse;
+            }
+
+            &:nth-child(2) {
+                margin: 0 auto;
+                animation: outBtm .8s backwards;
+                animation-direction: reverse;
+            }
+        }
+    }
+
+    @keyframes outT {
+        0% {
+            transform: translateY(0) rotate(0)
+        }
+
+        50% {
+            transform: translateY(5px) rotate(0)
+        }
+
+        100% {
+            transform: translateY(5px) rotate(135deg)
+        }
+    }
+
+    @keyframes outBtm {
+        0% {
+            transform: translateY(0) rotate(0)
+        }
+
+        50% {
+            transform: translateY(-8px) rotate(0)
+        }
+
+        100% {
+            transform: translateY(-8px) rotate(45deg)
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    .navmn {
+        li {
+            margin: 15px;
+        }
+    }
+
+    .icoBox {
+        li {
+            margin: 15px;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .userIco {
+            img {
+                width: 24px;
+            }
+        }
+
+    }
+
+
+    @media (max-width: 992px) {}
+
+}
+
+/////////////////////swiper////////////////////
+
+.jyySwiper {
+    .imgBox {
+        img {
+            width: 100%;
+        }
+    }
+}
