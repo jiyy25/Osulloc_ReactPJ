@@ -41,52 +41,43 @@ header {
   font-size: 20px;
   padding: 0.5rem;
   z-index: 999999;
-  color: #FFFEF1;
+  color: #1B1B1B;
 }
 header .navBtn {
   width: 35px;
   height: 30px;
-  background: 0 0;
+  background: transparent;
   border: 0;
+  position: relative;
 }
 header .navBtn i {
-  background-color: #FFFEF1;
-  content: "";
+  position: absolute;
+  z-index: 99999;
+  background-color: #1B1B1B;
   display: block;
   width: 95%;
   height: 1.8px;
+  transition: 0.5s;
 }
 header .navBtn i:nth-child(1) {
-  margin: 3px auto 11px;
-  animation: outT 0.8s backwards;
-  animation-direction: reverse;
+  top: 0;
 }
 header .navBtn i:nth-child(2) {
-  margin: 0 auto;
-  animation: outBtm 0.8s backwards;
-  animation-direction: reverse;
+  top: 50%;
 }
-@keyframes outT {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(5px) rotate(0);
-  }
-  100% {
-    transform: translateY(5px) rotate(135deg);
-  }
+header .navBtn i:nth-child(3) {
+  bottom: 0;
 }
-@keyframes outBtm {
-  0% {
-    transform: translateY(0) rotate(0);
-  }
-  50% {
-    transform: translateY(-8px) rotate(0);
-  }
-  100% {
-    transform: translateY(-8px) rotate(45deg);
-  }
+header .navBtn.act i:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+header .navBtn.act i:nth-child(2) {
+  opacity: 0;
+}
+header .navBtn.act i:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
 }
 header ul {
   margin-bottom: 0;
@@ -103,6 +94,34 @@ header .icoBox li img {
 header .icoBox .userIco img {
   width: 24px;
 }
+@media (max-width: 992px) {
+  header .navmn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #FFFEF1;
+    height: 500px;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  header .navmn.Bclick {
+    min-height: 500px;
+    padding: 5rem 2rem;
+    width: 50%;
+    opacity: 1;
+  }
+  header .navmn li {
+    border-bottom: 1px solid #1B1B1B;
+  }
+  header .navmn li a {
+    display: block;
+    width: 100px;
+  }
+}
+
 .jyySwiper .imgBox img {
   width: 100%;
 }

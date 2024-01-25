@@ -7,6 +7,7 @@
 
 $seolFont: 'seolleimcool-SemiBold';
 $Wcolor: #FFFEF1;
+$Bcolor: #1B1B1B;
 
 a {
     text-decoration: none;
@@ -47,70 +48,71 @@ header {
     font-size: 20px;
     padding: 0.5rem;
     z-index: 999999;
-    color: $Wcolor;
+    color: $Bcolor;
 
     .navBtn {
         width: 35px;
         height: 30px;
-        background: 0 0;
+        background: transparent;
         border: 0;
+        position: relative;
 
         i {
-            background-color: $Wcolor;
-            content: "";
+            position: absolute;
+            z-index: 99999;
+            background-color: $Bcolor;
             display: block;
             width: 95%;
             height: 1.8px;
+            transition: 0.5s;
+
 
             &:nth-child(1) {
-                margin: 3px auto 11px;
-                animation: outT .8s backwards;
-                animation-direction: reverse;
+                top: 0;
             }
 
             &:nth-child(2) {
-                margin: 0 auto;
-                animation: outBtm .8s backwards;
-                animation-direction: reverse;
+                top: 50%;
             }
+
+            &:nth-child(3) {
+                bottom: 0;
+            }
+
         }
+
+        &.act {
+            i {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: rotate(-45deg);
+                }
+            }
+
+        }
+
+
     }
 
-    @keyframes outT {
-        0% {
-            transform: translateY(0) rotate(0)
-        }
-
-        50% {
-            transform: translateY(5px) rotate(0)
-        }
-
-        100% {
-            transform: translateY(5px) rotate(135deg)
-        }
-    }
-
-    @keyframes outBtm {
-        0% {
-            transform: translateY(0) rotate(0)
-        }
-
-        50% {
-            transform: translateY(-8px) rotate(0)
-        }
-
-        100% {
-            transform: translateY(-8px) rotate(45deg)
-        }
-    }
 
     ul {
         margin-bottom: 0;
     }
 
+
     .navmn {
         li {
             margin: 15px;
+
         }
     }
 
@@ -132,7 +134,38 @@ header {
     }
 
 
-    @media (max-width: 992px) {}
+    @media (max-width: 992px) {
+        .navmn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: $Wcolor;
+            height: 500px;
+            width: 0;
+            overflow: hidden;
+            padding: 0;
+            transition: .5s;
+            opacity: 0;
+
+            &.Bclick {
+                min-height: 500px;
+                padding: 5rem 2rem;
+                width: 50%;
+                opacity: 1;
+            }
+
+            li {
+                border-bottom: 1px solid $Bcolor;
+
+                a {
+                    display: block;
+                    width: 100px;
+                }
+            }
+
+
+        }
+    }
 
 }
 
