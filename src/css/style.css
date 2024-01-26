@@ -122,6 +122,70 @@ header .icoBox .userIco img {
   }
 }
 
+.jyySwiper {
+  font-family: "Noto Sans KR", sans-serif;
+}
 .jyySwiper .imgBox img {
   width: 100%;
+}
+.jyySwiper .swiper-pagination {
+  display: block;
+  align-items: center;
+  bottom: 16px !important;
+}
+.jyySwiper .swiper-pagination .dot {
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #FFFEF1;
+  background-color: #FFFEF1;
+  opacity: 1;
+}
+.jyySwiper .swiper-pagination .swiper-pagination-bullet-active.dot {
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  line-height: 5px;
+}
+.jyySwiper .descBox strong {
+  display: block;
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.jyySwiper .descBox p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.jyySwiper .btnBox .swiperNB,
+.jyySwiper .btnBox .swiperPB {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 4px 8px;
+  align-items: center;
+  display: flex;
+  z-index: 99999;
+  border: 0;
+  background-color: transparent;
+  transform: translateY(-50%);
+  color: #FFFEF1;
+}
+.jyySwiper .btnBox .swiperNB::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid #FFFEF1;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(135deg);
+}
+.jyySwiper .btnBox .swiperPB::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid #FFFEF1;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(-45deg);
 }

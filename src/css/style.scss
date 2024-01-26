@@ -8,6 +8,7 @@
 $seolFont: 'seolleimcool-SemiBold';
 $Wcolor: #FFFEF1;
 $Bcolor: #1B1B1B;
+$krFont: "Noto Sans KR", sans-serif;
 
 a {
     text-decoration: none;
@@ -172,9 +173,91 @@ header {
 /////////////////////swiper////////////////////
 
 .jyySwiper {
+    font-family: $krFont;
+
     .imgBox {
         img {
             width: 100%;
         }
     }
+
+    .swiper-pagination {
+        display: block;
+        align-items: center;
+        bottom: 16px !important;
+
+        .dot {
+            font-size: 0;
+            width: 8px;
+            height: 8px;
+            border: 2px solid $Wcolor;
+            background-color: $Wcolor;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active.dot {
+            width: 13px;
+            height: 13px;
+            background-color: transparent;
+            line-height: 5px;
+        }
+
+    }
+
+    .descBox {
+        strong {
+            display: block;
+            font-size: 38px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+    }
+
+    .btnBox {
+
+        .swiperNB,
+        .swiperPB {
+            height: auto;
+            width: auto;
+            margin: 0;
+            padding: 4px 8px;
+            align-items: center;
+            display: flex;
+            z-index: 99999;
+            border: 0;
+            background-color: transparent;
+            transform: translateY(-50%);
+            color: $Wcolor;
+            // background-color: aquamarine;
+
+        }
+
+        .swiperNB::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border: 2px solid $Wcolor;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(135deg);
+        }
+
+        .swiperPB::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            border: 2px solid $Wcolor;
+            border-right: 0;
+            border-bottom: 0;
+            transform: rotate(-45deg);
+        }
+
+    }
+
+
 }
