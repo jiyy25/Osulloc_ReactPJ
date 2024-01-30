@@ -8,22 +8,40 @@ import "@fontsource/noto-sans-kr/300.css"
 import "@fontsource/noto-sans-kr/400.css"
 
 
-
 function Header() {
     const [toggleOpen, setToggleOpen] = useState(false);
     const hamClick = () => {
         setToggleOpen(!toggleOpen)
     }
 
+    React.useEffect(() => {
+        const hdobj = document.querySelector("header");
+        const scrollhead = () => {
+            if (window.scrollY > 80) {
+                hdobj.classList.add("bg-white")
+            } else {
+                hdobj.classList.remove("bg-white")
+            }
+
+        }
+        window.addEventListener('scroll', scrollhead)
+
+        return () => {
+            window.removeEventListener('scroll', scrollhead)
+
+        }
+
+    }, [])
+
     return (
         <header className='fixed-top border-bottom'>
-            <div className='container-fluid d-flex justify-content-between align-items-center'>
+            <div className='container-fluid d-flex justify-content-between align-items-center px-lg-5'>
                 <button className={`navBtn d-lg-none mx-2 ${toggleOpen ? 'act' : ''}`} onClick={hamClick}>
                     <i></i>
                     <i></i>
                     <i></i>
                 </button>
-                <h1 className='logo mx-lg-5'>
+                <h1 className='logo'>
                     <img src="/img/logo/logo_black.png" alt="로고" />
                 </h1>
                 <div className='d-lg-flex '>
@@ -34,14 +52,13 @@ function Header() {
                         <li><a href="">브랜드</a></li>
                         <li><a href="">이벤트</a></li>
                     </ul>
-                    <ul className='icoBox d-flex mx-lg-5'>
+                    <ul className='icoBox d-flex ms-lg-5'>
                         <li><a href=""><IoBagOutline size={25} /></a></li>
                         <li className='userIco'><a href=""><RiUserHeartLine size={25} /></a></li>
-                        <li className='d-none d-lg-block'><a href=""><IoSearch size={25} /></a></li>
+                        <li className='d-none d-lg-block me-lg-0'><a href=""><IoSearch size={25} /></a></li>
                     </ul>
                 </div>
             </div>
-
         </header >
     )
 }

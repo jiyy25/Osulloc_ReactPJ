@@ -58,6 +58,7 @@ header .navBtn i {
   width: 95%;
   height: 1.8px;
   transition: 0.5s;
+  background-color: #FFFEF1;
 }
 header .navBtn i:nth-child(1) {
   top: 0;
@@ -95,6 +96,9 @@ header .icoBox .userIco img {
   width: 24px;
 }
 @media (max-width: 992px) {
+  header .navBtn i {
+    background-color: #1B1B1B;
+  }
   header .navmn {
     position: absolute;
     left: 0;
@@ -149,7 +153,7 @@ header .icoBox .userIco img {
 }
 .jyySwiper .descBox strong {
   display: block;
-  font-size: 38px;
+  font-size: 35px;
   margin-bottom: 20px;
   font-weight: 400;
 }
@@ -188,4 +192,43 @@ header .icoBox .userIco img {
   border-right: 0;
   border-bottom: 0;
   transform: rotate(-45deg);
+}
+@media (max-width: 992px) {
+  .jyySwiper .btnBox {
+    display: none !important;
+  }
+}
+@media (min-width: 993px) {
+  .jyySwiper .imgBox .descBox {
+    margin-top: 30px !important;
+  }
+  .jyySwiper .imgBox .descBox .moreBtn {
+    position: absolute;
+    left: 15px;
+    bottom: -10px;
+    transform: translateY(5px);
+  }
+}
+
+.youtube {
+  margin: 50px 0;
+}
+.youtube #player {
+  width: 100%;
+  height: 56vw;
+}
+.youtube #player .ytp-progress-bar-container {
+  display: none;
+}
+.youtube #player .ytp-chrome-top.ytp-show-cards-title {
+  display: none;
+}
+
+.video-foreground video {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .video-foreground video {
+    min-height: 500px;
+  }
 }

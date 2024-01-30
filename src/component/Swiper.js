@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { MoreBtn } from '../styled/Btns';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 
 // import required modules
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
@@ -39,7 +41,7 @@ export default function App(props) {
                                             <img src={v.imgsrc} alt="" className='d-none d-lg-block' />
                                             <img src={v.sm_imgsrc} alt="" className='d-lg-none' />
                                         </a>
-                                        <div className='container d-none d-lg-block  position-absolute m-lg-auto start-0 end-0 top-50 translate-middle-y descBox'>
+                                        <div className='container d-none d-lg-block  position-absolute m-lg-auto start-0 end-0 top-50 translate-middle-y descBox mb-5'>
                                             <strong>
                                                 {v.text.split('|').map((vv, ii) => {
                                                     return (
@@ -50,7 +52,7 @@ export default function App(props) {
                                                     )
                                                 })}
                                             </strong>
-                                            <p >
+                                            <p className='mb-5'>
                                                 {v.sm_text.split('|').map((vv, ii) => {
                                                     return (
                                                         <Fragment key={ii}>
@@ -60,6 +62,7 @@ export default function App(props) {
                                                     )
                                                 })}
                                             </p>
+                                            <MoreBtn className='moreBtn'>자세히보기</MoreBtn>
                                         </div>
                                         <div className='d-lg-none position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-end pb-5 px-5 align-items-center text-center descBox'>
                                             <strong>
@@ -72,7 +75,7 @@ export default function App(props) {
                                                     )
                                                 })}
                                             </strong>
-                                            <p className='pb-5 mb-5'>
+                                            <p className='mb-3'>
                                                 {v.sm_text.split('|').map((vv, ii) => {
                                                     return (
                                                         <Fragment key={ii}>
@@ -82,7 +85,9 @@ export default function App(props) {
                                                     )
                                                 })}
                                             </p>
+                                            <MoreBtn className='moreBtn'>자세히보기</MoreBtn>
                                         </div>
+
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -93,6 +98,7 @@ export default function App(props) {
                     <button className='swiperPB' ></button>
                     <button className='swiperNB' ></button>
                 </div>
+
             </Swiper >
 
         </div >
