@@ -295,32 +295,8 @@ header {
 }
 
 /////////////////////Mov///////////////////////
-.youtube {
-    margin: 50px 0;
 
-    #player {
-        width: 100%;
-        height: 56vw;
+#main-player {
+    width: 100%;
 
-        .ytp-progress-bar-container {
-            display: none;
-        }
-
-        .ytp-chrome-top.ytp-show-cards-title {
-            display: none;
-        }
-    }
-
-}
-
-.video-foreground {
-    video {
-        width: 100%;
-    }
-
-    @media (max-width:992px) {
-        video {
-            min-height: 500px;
-        }
-    }
 }

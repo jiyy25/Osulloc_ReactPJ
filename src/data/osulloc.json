@@ -1,6 +1,12 @@
 {
     "swiper": [
         {
+            "imgsrc": "/img/swiper/osulloc0.jpg",
+            "sm_imgsrc": "/img/mobile/mobile6.jpg",
+            "text": "제주에서 온 차 한잔의 쉼 | 오설록 시그니처 세작",
+            "sm_text": "제주의 흙, 물, 빛, 바람, 안개가 만든 풍미와 | 은은한 향의 녹차를 최대 25% 할인으로 만나보세요"
+        },
+        {
             "imgsrc": "/img/swiper/osulloc1.jpg",
             "sm_imgsrc": "/img/mobile/mobile1.jpg",
             "text": "제주에서 온 차 한잔의 쉼 | 오설록 시그니처 세작",
@@ -24,5 +30,6 @@
             "text": "제주에서 온 차 한잔의 쉼 | 오설록 시그니처 세작",
             "sm_text": "제주의 흙, 물, 빛, 바람, 안개가 만든 풍미와 | 은은한 향의 녹차를 최대 25% 할인으로 만나보세요"
         }
+       
     ]
 }

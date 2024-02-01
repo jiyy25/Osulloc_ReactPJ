@@ -11,4 +11,7 @@ export const MoreBtn = styled.button`
     color: white;
     margin: 0 auto;
 `
-
+export const BmoreBtn = styled(MoreBtn)`
+    color: black;
+    border: 1px solid black;
+`
