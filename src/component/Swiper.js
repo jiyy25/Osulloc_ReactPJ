@@ -19,10 +19,10 @@ export default function App(props) {
     return (
         <div className='jyySwiper position-relative'>
             <Swiper
-                // autoplay={{
-                //     delay: 3000,
-                //     disableOnInteraction: true,
-                // }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: true,
+                }}
                 loop={true}
                 navigation={
                     { nextEl: ".swiperNB", prevEl: ".swiperPB" }
@@ -38,8 +38,8 @@ export default function App(props) {
                                 <div className='imgBox position-relative'>
                                     <div>
                                         <a href="none">
-                                            <img src={v.imgsrc} alt="" className='d-none d-lg-block' />
-                                            <img src={v.sm_imgsrc} alt="" className='d-lg-none' />
+                                            <img src={v.imgsrc} alt={v.alt} className='d-none d-lg-block' />
+                                            <img src={v.sm_imgsrc} alt={v.alt} className='d-lg-none' />
                                         </a>
                                         <div className='container d-none d-lg-block  position-absolute m-lg-auto start-0 end-0 top-50 translate-middle-y descBox mb-5'>
                                             <strong>

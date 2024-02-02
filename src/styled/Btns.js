@@ -10,6 +10,11 @@ export const MoreBtn = styled.button`
     background-color: transparent;
     color: white;
     margin: 0 auto;
+    display: block;
+    transition: .3s;
+    &:hover{
+        background-color: #d9d9d975;
+    }
 `
 export const BmoreBtn = styled(MoreBtn)`
     color: black;

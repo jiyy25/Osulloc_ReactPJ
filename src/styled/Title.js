@@ -10,8 +10,13 @@ export const BigTitle = styled.h2`
     margin-bottom: 20px;
 `
 export const SmallTitle = styled.h2`
-    font-family: "Noto Sans KR", sans-serif;
     font-size: 25px;
     text-align: center;
     font-weight: 300;
 `
+export const DescP = styled.p`
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    text-align: center;
+`
+

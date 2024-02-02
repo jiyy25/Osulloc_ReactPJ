@@ -1,3 +1,4 @@
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 @font-face {
   font-family: "seolleimcool-SemiBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2") format("woff2");
@@ -210,6 +211,32 @@ header .icoBox .userIco img {
   }
 }
 
-#main-player {
+.videoZone {
+  margin-bottom: 96px;
+}
+.videoZone .video-foreground .main-player {
   width: 100%;
+}
+.videoZone .video-foreground .descBox {
+  color: #FFFEF1;
+  bottom: 15%;
+}
+footer {
+  font-weight: 100;
+  font-family: "NanumSquare", sans-serif;
+  color: #FFFEF1;
+  font-size: 14px;
+}
+footer span,
+footer strong {
+  display: block;
+}
+footer .leftDesc ul {
+  font-size: 18px;
+}
+footer .leftDesc ul li {
+  margin: 0 10px;
+}
+footer .help .phonNum {
+  font-size: 30px;
 }

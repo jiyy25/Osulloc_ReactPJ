@@ -6,6 +6,7 @@ import { IoSearch } from "react-icons/io5";
 import { RiUserHeartLine } from "react-icons/ri";
 import "@fontsource/noto-sans-kr/300.css"
 import "@fontsource/noto-sans-kr/400.css"
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -42,7 +43,10 @@ function Header() {
                     <i></i>
                 </button>
                 <h1 className='logo'>
-                    <img src="/img/logo/logo_black.png" alt="로고" />
+                    <Link to='/'>
+                        <img src="/img/logo/logo_black.png" alt="로고" />
+                    </Link>
+
                 </h1>
                 <div className='d-lg-flex '>
                     <ul className={`navmn d-lg-flex justify-content-between ${toggleOpen ? 'Bclick' : ''}`}>
@@ -50,7 +54,7 @@ function Header() {
                         <li><a href="">보자기포장</a></li>
                         <li><a href="">다다일상</a></li>
                         <li><a href="">브랜드</a></li>
-                        <li><a href="">이벤트</a></li>
+                        <li><Link to="/event">이벤트</Link></li>
                     </ul>
                     <ul className='icoBox d-flex ms-lg-5'>
                         <li><a href=""><IoBagOutline size={25} /></a></li>
