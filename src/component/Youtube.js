@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { MoreBtn } from '../styled/Btns';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import { BigTitle, SmallTitle } from '../styled/Title';
+import "@fontsource/noto-sans-kr/200.css"
+import "@fontsource/noto-sans-kr/300.css"
 
-const Mov = () => {
+
+const YouTubePlayer = () => {
     useEffect(() => {
         // This code loads the IFrame Player API code asynchronously.
         const tag = document.createElement('script');
@@ -34,17 +37,14 @@ const Mov = () => {
     }, []);
 
     return (
-        <section className="youtube position-relative">
-            <div className=''>
-                
+        <section className="youtube">
+            <BigTitle>오설록 프리미엄 말차 즐기는 법</BigTitle>
+            <SmallTitle className='mb-4'>차와 함께하는 삶, 각자의 취향이 묻어있는레시피와 인터뷰를 만나보세요.</SmallTitle>
+            <div className="youtube__area">
+                <div id="player"></div>
             </div>
-            <div className="youtube__area mb-5">
-                <div id="player">
-                </div>
-            </div>
-            <MoreBtn className='zup'>자세히보기</MoreBtn>
         </section>
     );
 };
 
-export default Mov;
+export default YouTubePlayer;

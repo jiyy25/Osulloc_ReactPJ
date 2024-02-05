@@ -45,6 +45,14 @@ h6 {
     z-index: 99999;
 }
 
+.small_font {
+    font-size: 16px;
+}
+
+.B_small_font {
+    font-size: 22px;
+}
+
 /////////////////header zone/////////////////
 
 header {
@@ -298,23 +306,43 @@ header {
     }
 }
 
-/////////////////////Mov///////////////////////
+/////////////////Mov///////////////////////
 
 .videoZone {
     margin-bottom: 96px;
 
     .video-foreground {
+
         .main-player {
             width: 100%;
+            height: 50vw
         }
 
         .descBox {
             color: $Wcolor;
             bottom: 15%;
+
         }
     }
 
-    @media (max-width:992px) {}
+    @media (max-width:992px) {
+        .main-player {
+            position: unset;
+        }
+
+        .panna {
+            font-size: 20px;
+            color: #1B1B1B;
+        }
+    }
+
+    @media (min-width:992px) {
+        .descBox {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 /////////////////footer////////////////////////
@@ -332,16 +360,48 @@ footer {
 
     .leftDesc {
         ul {
-            font-size: 18px;
+            width: 100%;
+            font-size: 16px;
 
             li {
                 margin: 0 10px;
+                width: auto;
             }
         }
     }
-    .help{
-        .phonNum{
-            font-size: 30px;
+
+    .qnafooter {
+        .largeF {
+            font-size: 23px;
+        }
+    }
+
+
+    @media (max-width:992px) {
+
+        .largeF {
+            font-size: 21px;
+        }
+
+        .help {
+            font-size: 15px;
+            width: 50%;
+        }
+
+        .mail {
+            width: 50%;
+        }
+    }
+
+    @media (max-width:600px) {
+        .mail {
+            .largeF {
+                font-size: 18px;
+            }
+        }
+
+        .adressdsec {
+            font-size: 11px;
         }
     }
 }

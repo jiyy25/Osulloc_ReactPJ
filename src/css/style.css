@@ -36,6 +36,14 @@ h6 {
   z-index: 99999;
 }
 
+.small_font {
+  font-size: 16px;
+}
+
+.B_small_font {
+  font-size: 22px;
+}
+
 header {
   font-family: "seolleimcool-SemiBold";
   background-color: transparent;
@@ -216,11 +224,29 @@ header .icoBox .userIco img {
 }
 .videoZone .video-foreground .main-player {
   width: 100%;
+  height: 50vw;
 }
 .videoZone .video-foreground .descBox {
   color: #FFFEF1;
   bottom: 15%;
 }
+@media (max-width: 992px) {
+  .videoZone .main-player {
+    position: unset;
+  }
+  .videoZone .panna {
+    font-size: 20px;
+    color: #1B1B1B;
+  }
+}
+@media (min-width: 992px) {
+  .videoZone .descBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 footer {
   font-weight: 100;
   font-family: "NanumSquare", sans-serif;
@@ -232,11 +258,33 @@ footer strong {
   display: block;
 }
 footer .leftDesc ul {
-  font-size: 18px;
+  width: 100%;
+  font-size: 16px;
 }
 footer .leftDesc ul li {
   margin: 0 10px;
+  width: auto;
 }
-footer .help .phonNum {
-  font-size: 30px;
+footer .qnafooter .largeF {
+  font-size: 23px;
+}
+@media (max-width: 992px) {
+  footer .largeF {
+    font-size: 21px;
+  }
+  footer .help {
+    font-size: 15px;
+    width: 50%;
+  }
+  footer .mail {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  footer .mail .largeF {
+    font-size: 18px;
+  }
+  footer .adressdsec {
+    font-size: 11px;
+  }
 }

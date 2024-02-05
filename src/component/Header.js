@@ -36,7 +36,7 @@ function Header() {
 
     return (
         <header className='fixed-top border-bottom'>
-            <div className='container-fluid d-flex justify-content-between align-items-center px-lg-5'>
+            <div className='container d-flex justify-content-between align-items-center'>
                 <button className={`navBtn d-lg-none mx-2 ${toggleOpen ? 'act' : ''}`} onClick={hamClick}>
                     <i></i>
                     <i></i>

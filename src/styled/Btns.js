@@ -5,7 +5,7 @@ export const MoreBtn = styled.button`
     width: 320px;
     height: 50px;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 14px;
+    font-size: 1rem;
     border: 1px solid white;
     background-color: transparent;
     color: white;
