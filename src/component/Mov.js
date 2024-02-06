@@ -6,7 +6,7 @@ import "@fontsource/noto-sans-kr/300.css"
 const Mov = () => {
 
     return (
-        <div className='videoZone mt-5 pt-5'>
+        <div className='videoZone mbt-100'>
             <BigTitle>오설록 프리미엄 말차 즐기는 법</BigTitle>
             <SmallTitle>차와 함께하는 삶, 각자의 취향이 묻어있는레시피와 인터뷰를 만나보세요.</SmallTitle>
             <div class="video-foreground pc-view position-relative">

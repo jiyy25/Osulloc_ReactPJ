@@ -6,6 +6,7 @@ import Mov from "./component/Mov";
 import Footer from "./component/Footer";
 import Haesam from "./component/haesam";
 import Bestseller from "./component/Bestseller";
+import Story from "./component/Story";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Swiper datasrc={datasrc.swiper}></Swiper>
             <Mov></Mov>
             <Bestseller datasrc={datasrc.product}></Bestseller>
+            <Story></Story>
           </>}>
 
         </Route>

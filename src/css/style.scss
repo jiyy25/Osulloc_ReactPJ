@@ -14,6 +14,14 @@ $Bcolor: #1B1B1B;
 $krFont: "Noto Sans KR", sans-serif;
 $nanumFont: "NanumSquare", sans-serif;
 
+.mbt-100{
+    margin: 100px 0 !important;
+}
+
+.mb-100{
+    margin-bottom: 100px !important;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -354,8 +362,10 @@ header {
         text-align: center;
 
         .productBox {
-            min-width: 280px;
-            min-width: 294px;
+            // min-width: 280px;
+            max-width: 294px;
+            min-width: 205px;
+            font-family: $krFont;
 
             img {
                 width: 100%;
@@ -363,6 +373,16 @@ header {
 
             .textBox {
                 width: 100%;
+
+                .title {
+                    font-weight: 400;
+                    font-size: 18px !important;
+                }
+
+                .price {
+                    font-weight: 300;
+                    font-size: 18px !important;
+                }
 
                 .title,
                 .price {
@@ -383,25 +403,48 @@ header {
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
+                font-weight: 300;
             }
 
         }
     }
 
     @media (max-width:992px) {
-        .textBox {
 
-            .title,
-            .price,
-            .desc {
-                font-size: 21px !important;
-            }
+        .productBox {
+            padding: 0 !important;
 
         }
     }
 }
 
 
+//////////////////osullocStory//////////////////
+
+.osullocStory {
+    color: $Wcolor;
+
+    .bgblack {
+        background-color: #00000059;
+        height: 100%;
+
+        .storyTextBox {
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .descP {
+                width: 473px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .storyImg {
+        background: url(/public/img/banner/osulloc22.jpg) 50% center no-repeat;
+        height: 470px;
+    }
+}
 
 
 

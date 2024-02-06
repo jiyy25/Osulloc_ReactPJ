@@ -13,7 +13,7 @@ export const SmallTitle = styled.h2`
     font-size: 25px;
     text-align: center;
     font-weight: 300;
-    margin-bottom: 70px;
+    margin-bottom: 55px;
 `
 export const DescP = styled.p`
     font-family: "Noto Sans KR", sans-serif;

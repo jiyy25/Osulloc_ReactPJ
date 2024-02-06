@@ -5,6 +5,14 @@
   font-weight: normal;
   font-style: normal;
 }
+.mbt-100 {
+  margin: 100px 0 !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -251,14 +259,23 @@ header .icoBox .userIco img {
   text-align: center;
 }
 .BestSeller .bestProduct .productBox {
-  min-width: 280px;
-  min-width: 294px;
+  max-width: 294px;
+  min-width: 205px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .BestSeller .bestProduct .productBox img {
   width: 100%;
 }
 .BestSeller .bestProduct .productBox .textBox {
   width: 100%;
+}
+.BestSeller .bestProduct .productBox .textBox .title {
+  font-weight: 400;
+  font-size: 18px !important;
+}
+.BestSeller .bestProduct .productBox .textBox .price {
+  font-weight: 300;
+  font-size: 18px !important;
 }
 .BestSeller .bestProduct .productBox .textBox .title,
 .BestSeller .bestProduct .productBox .textBox .price {
@@ -277,13 +294,33 @@ header .icoBox .userIco img {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 300;
 }
 @media (max-width: 992px) {
-  .BestSeller .textBox .title,
-  .BestSeller .textBox .price,
-  .BestSeller .textBox .desc {
-    font-size: 21px !important;
+  .BestSeller .productBox {
+    padding: 0 !important;
   }
+}
+
+.osullocStory {
+  color: #FFFEF1;
+}
+.osullocStory .bgblack {
+  background-color: rgba(0, 0, 0, 0.3490196078);
+  height: 100%;
+}
+.osullocStory .bgblack .storyTextBox {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.osullocStory .bgblack .storyTextBox .descP {
+  width: 473px;
+  margin: 0 auto;
+}
+.osullocStory .storyImg {
+  background: url(/public/img/banner/osulloc22.jpg) 50% center no-repeat;
+  height: 470px;
 }
 
 footer {

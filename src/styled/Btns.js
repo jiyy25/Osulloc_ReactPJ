@@ -11,12 +11,15 @@ export const MoreBtn = styled.button`
     color: white;
     margin: 0 auto;
     display: block;
-    transition: .3s;
+    transition: .5s;
     &:hover{
-        background-color: #d9d9d975;
+        background-color:rgba(255,255,255,.3);
     }
 `
 export const BmoreBtn = styled(MoreBtn)`
-    color: black;
+    color: #1b1b1b;
     border: 1px solid black;
+    &:hover{
+        background-color:rgba(0, 0, 0, 0.085);
+    }
 `
