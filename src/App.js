@@ -5,7 +5,7 @@ import datasrc from './data/osulloc.json'
 import Mov from "./component/Mov";
 import Footer from "./component/Footer";
 import Haesam from "./component/haesam";
-import YouTubePlayer from "./component/Youtube";
+import Bestseller from "./component/Bestseller";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <>
             <Swiper datasrc={datasrc.swiper}></Swiper>
             <Mov></Mov>
-            {/* <YouTubePlayer></YouTubePlayer> */}
+            <Bestseller datasrc={datasrc.product}></Bestseller>
           </>}>
 
         </Route>

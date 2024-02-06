@@ -345,6 +345,67 @@ header {
     }
 }
 
+
+///////////////////BestSeller//////////////////
+
+.BestSeller {
+
+    .bestProduct {
+        text-align: center;
+
+        .productBox {
+            min-width: 280px;
+            min-width: 294px;
+
+            img {
+                width: 100%;
+            }
+
+            .textBox {
+                width: 100%;
+
+                .title,
+                .price {
+                    display: block;
+                    width: 100%;
+                    font-size: 1rem;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+
+            .desc {
+                font-size: 14px;
+                display: block;
+                width: 100%;
+                font-size: 1rem;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+        }
+    }
+
+    @media (max-width:992px) {
+        .textBox {
+
+            .title,
+            .price,
+            .desc {
+                font-size: 21px !important;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
 /////////////////footer////////////////////////
 
 footer {

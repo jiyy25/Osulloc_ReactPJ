@@ -37,7 +37,7 @@ export default function App(props) {
                             <SwiperSlide>
                                 <div className='imgBox position-relative'>
                                     <div>
-                                        <a href="none">
+                                        <a href="#none">
                                             <img src={v.imgsrc} alt={v.alt} className='d-none d-lg-block' />
                                             <img src={v.sm_imgsrc} alt={v.alt} className='d-lg-none' />
                                         </a>

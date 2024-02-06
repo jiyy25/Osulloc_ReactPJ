@@ -247,6 +247,45 @@ header .icoBox .userIco img {
   }
 }
 
+.BestSeller .bestProduct {
+  text-align: center;
+}
+.BestSeller .bestProduct .productBox {
+  min-width: 280px;
+  min-width: 294px;
+}
+.BestSeller .bestProduct .productBox img {
+  width: 100%;
+}
+.BestSeller .bestProduct .productBox .textBox {
+  width: 100%;
+}
+.BestSeller .bestProduct .productBox .textBox .title,
+.BestSeller .bestProduct .productBox .textBox .price {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.BestSeller .bestProduct .productBox .desc {
+  font-size: 14px;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media (max-width: 992px) {
+  .BestSeller .textBox .title,
+  .BestSeller .textBox .price,
+  .BestSeller .textBox .desc {
+    font-size: 21px !important;
+  }
+}
+
 footer {
   font-weight: 100;
   font-family: "NanumSquare", sans-serif;
