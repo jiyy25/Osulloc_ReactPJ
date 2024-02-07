@@ -14,11 +14,11 @@ $Bcolor: #1B1B1B;
 $krFont: "Noto Sans KR", sans-serif;
 $nanumFont: "NanumSquare", sans-serif;
 
-.mbt-100{
+.mbt-100 {
     margin: 100px 0 !important;
 }
 
-.mb-100{
+.mb-100 {
     margin-bottom: 100px !important;
 }
 
@@ -443,10 +443,84 @@ header {
     .storyImg {
         background: url(/public/img/banner/osulloc22.jpg) 50% center no-repeat;
         height: 470px;
+        width: auto;
     }
 }
 
+/////////////BestCategory////////////////////
+.BestCategory {
+    font-family: $krFont;
 
+    .categoryBoxZone {
+        margin: 5rem;
+
+        .cateBox {
+            min-height: 500px;
+            max-height: 550px;
+
+            strong {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin: 1rem 0;
+            }
+
+            a {
+                font-size: 1.2rem;
+            }
+        }
+
+
+        .cateBox1 {
+            background: url(/public/img/banner/osulloc39.jpg);
+            background-size: cover;
+            background-position: 30% 50%;
+            background-repeat: no-repeat;
+        }
+
+        .cateBox2 {
+            background: url(/public/img/product/osulloc02.jpg);
+            background-size: cover;
+            background-position: 30% 0%;
+            background-repeat: no-repeat;
+        }
+
+        .cateBox3 {
+            background: url(/public/img/banner/osulloc1_gift.jpg);
+            background-size: cover;
+            background-position: 50% 10%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media (max-width:992px) {
+        padding: 0;
+
+        .categoryBoxZone {
+            margin: 0;
+
+            .cateBox3 {
+                background-position: 75%;
+            }
+        }
+    }
+
+    @media (max-width:740px) {
+        padding: 0;
+
+        .categoryBoxZone {
+            margin: 0;
+
+            .cateBox3 {
+                background: url(/public/img/product/osulloc25.png);
+                background-repeat: no-repeat;
+                background-position: 50% 10%;
+            }
+        }
+    }
+}
 
 
 /////////////////footer////////////////////////

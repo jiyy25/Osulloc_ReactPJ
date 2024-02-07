@@ -4,7 +4,7 @@ import { MoreBtn } from '../styled/Btns'
 
 function Story() {
     return (
-        <div className='osullocStory'>
+        <div className='osullocStory mb-100'>
             <div className='storyImg'>
                 <div className='bgblack position-relative'>
                     <div className='storyTextBox position-absolute'>

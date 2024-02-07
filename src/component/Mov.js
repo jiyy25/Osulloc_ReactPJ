@@ -18,13 +18,8 @@ const Mov = () => {
                     <MoreBtn className=' d-none d-lg-block'>자세히보기</MoreBtn>
                     <BmoreBtn className='d-lg-none'>자세히보기</BmoreBtn>
                 </div>
-
             </div>
-
-
         </div>
-
-
     )
 };
 
