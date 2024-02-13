@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../css/style.min.css'
+import '../css/style.min.css';
 import { IoBagOutline } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
 import { RiUserHeartLine } from "react-icons/ri";
@@ -35,8 +35,8 @@ function Header() {
     }, [])
 
     return (
-        <header className='fixed-top border-bottom'>
-            <div className='container d-flex justify-content-between align-items-center'>
+        <header className='fixed-top border-bottom  '>
+            <div className='container d-flex justify-content-between align-items-center '>
                 <button className={`navBtn d-lg-none mx-2 ${toggleOpen ? 'act' : ''}`} onClick={hamClick}>
                     <i></i>
                     <i></i>
@@ -50,11 +50,39 @@ function Header() {
                 </h1>
                 <div className='d-lg-flex '>
                     <ul className={`navmn d-lg-flex justify-content-between ${toggleOpen ? 'Bclick' : ''}`}>
-                        <li><a href="">제품</a></li>
-                        <li><a href="">보자기포장</a></li>
-                        <li><a href="">다다일상</a></li>
-                        <li><a href="">브랜드</a></li>
-                        <li><Link to="/event">이벤트</Link></li>
+                        <li className='before'>
+                            <a href="" className='d1a'>제품</a>
+                            <ul className='d2ul position-absolute d-lg-flex '>
+                                <li><a href="" className='d2a'>베스트</a></li>
+                                <li><a href="" className='d2a'>티 제품</a></li>
+                                <li><a href="" className='d2a'>티푸드</a></li>
+                                <li><a href="" className='d2a'>티웨어</a></li>
+                                <li><a href="" className='d2a'>라이프 스타일</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" className='d1a'>선물추천</a></li>
+                        <li className='before'>
+                            <a href="" className='d1a'>다다일상</a>
+                            <ul className='d2ul position-absolute d-lg-flex '>
+                                <li><a href="" className='d2a'>다다일상 구독</a></li>
+                                <li><a href="" className='d2a'>정기배송 신청</a></li>
+                            </ul>
+                        </li>
+                        <li className='before'>
+                            <a href="" className='d1a'>브랜드</a>
+                            <ul className='d2ul position-absolute d-lg-flex '>
+                                <li><a href="" className='d2a'>오설록 스토리</a></li>
+                                <li><a href="" className='d2a'>제주 티뮤지엄</a></li>
+                                <li><a href="" className='d2a'>매장 소개</a></li>
+                            </ul>
+                        </li>
+                        <li className='before'>
+                            <Link to="/event" className='d1a'>이벤트</Link>
+                            <ul className='d2ul position-absolute d-lg-flex '>
+                                <li><a href="#none" className='d2a'>이달의 이벤트</a></li>
+                                <li><a href="#none" className='d2a'>이벤트 공지</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul className='icoBox d-flex ms-lg-5'>
                         <li><a href=""><IoBagOutline size={25} /></a></li>

@@ -53,12 +53,15 @@ h6 {
 }
 
 header {
+  transition: 0.5s;
   font-family: "seolleimcool-SemiBold";
   background-color: transparent;
   font-size: 20px;
   padding: 0.5rem;
   z-index: 999999;
-  color: #1B1B1B;
+}
+header:hover {
+  background-color: #fff;
 }
 header .navBtn {
   width: 35px;
@@ -100,8 +103,50 @@ header .navBtn.act i:nth-child(3) {
 header ul {
   margin-bottom: 0;
 }
+header .before::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 0;
+  background-color: #fff;
+  transition: 0.5s;
+}
+header .before:hover::before {
+  height: 200px;
+}
 header .navmn li {
   margin: 15px;
+}
+header .navmn li:hover .d1a {
+  color: #6C801A;
+}
+header .navmn li:hover .d1a .d2ul {
+  max-height: 200px;
+}
+header .navmn li .d2ul {
+  max-height: 0;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transition: 0.5s;
+  width: 10000px;
+  margin-left: 50vw;
+}
+header .navmn li .d2ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.1rem;
+}
+header .navmn li .d2ul li:hover a {
+  color: #6C801A;
+}
+header .navmn li .d2ul li .d3ul li {
+  margin: auto 0;
+}
+header .before:hover .d2ul {
+  max-height: 300px;
 }
 header .icoBox li {
   margin: 15px;
@@ -112,6 +157,16 @@ header .icoBox li img {
 header .icoBox .userIco img {
   width: 24px;
 }
+@media (max-width: 1400px) {
+  header .d2ul {
+    margin-left: 43vw !important;
+  }
+}
+@media (max-width: 1200px) {
+  header .d2ul {
+    margin-left: 35vw !important;
+  }
+}
 @media (max-width: 992px) {
   header .navBtn i {
     background-color: #1B1B1B;
@@ -121,7 +176,7 @@ header .icoBox .userIco img {
     left: 0;
     top: 0;
     background-color: #FFFEF1;
-    height: 500px;
+    height: 1000px;
     width: 0;
     overflow: hidden;
     padding: 0;
@@ -134,12 +189,20 @@ header .icoBox .userIco img {
     width: 50%;
     opacity: 1;
   }
+  header .navmn .d2ul {
+    position: unset !important;
+    margin-left: 0 !important;
+  }
+  header .navmn .d2ul li {
+    margin: 0.5rem 0;
+    border: 0;
+  }
   header .navmn li {
     border-bottom: 1px solid #1B1B1B;
   }
   header .navmn li a {
     display: block;
-    width: 100px;
+    max-width: 200px;
   }
 }
 

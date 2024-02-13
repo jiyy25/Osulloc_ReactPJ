@@ -64,12 +64,17 @@ h6 {
 /////////////////header zone/////////////////
 
 header {
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #fff;
+    }
+
     font-family: $seolFont;
     background-color: transparent;
     font-size: 20px;
     padding: 0.5rem;
     z-index: 999999;
-    color: $Bcolor;
 
     .navBtn {
         width: 35px;
@@ -130,12 +135,73 @@ header {
         margin-bottom: 0;
     }
 
+    .before {
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 0;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+    }
+
+
+    .before:hover::before {
+        height: 200px;
+    }
 
     .navmn {
+
+
         li {
             margin: 15px;
 
+
+            &:hover .d1a {
+
+                color: #6C801A;
+
+
+                .d2ul {
+                    max-height: 200px;
+                }
+            }
+
+            .d2ul {
+                max-height: 0;
+                overflow: hidden;
+                left: 0;
+                right: 0;
+                top: 100%;
+                transition: .5s;
+                width: 10000px;
+                margin-left: 50vw;
+
+                li {
+                    font-family: $krFont;
+                    font-size: 1.1rem;
+
+                    &:hover a {
+                        color: #6C801A;
+                    }
+
+                    .d3ul {
+                        li {
+                            margin: auto 0;
+                        }
+                    }
+                }
+
+
+            }
         }
+    }
+
+    .before:hover .d2ul {
+        max-height: 300px;
     }
 
     .icoBox {
@@ -155,6 +221,18 @@ header {
 
     }
 
+    // 상단반응형
+    @media (max-width: 1400px) {
+        .d2ul {
+            margin-left: 43vw !important;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .d2ul {
+            margin-left: 35vw !important;
+        }
+    }
 
     @media (max-width: 992px) {
         .navBtn i {
@@ -166,7 +244,7 @@ header {
             left: 0;
             top: 0;
             background-color: $Wcolor;
-            height: 500px;
+            height: 1000px;
             width: 0;
             overflow: hidden;
             padding: 0;
@@ -180,12 +258,24 @@ header {
                 opacity: 1;
             }
 
+
+            .d2ul {
+                position: unset !important;
+                margin-left: 0 !important;
+
+                li {
+                    margin: 0.5rem 0;
+                    border: 0;
+                }
+            }
+
+
             li {
                 border-bottom: 1px solid $Bcolor;
 
                 a {
                     display: block;
-                    width: 100px;
+                    max-width: 200px;
                 }
             }
 
