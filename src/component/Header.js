@@ -35,8 +35,8 @@ function Header() {
     }, [])
 
     return (
-        <header className='fixed-top border-bottom  '>
-            <div className='container d-flex justify-content-between align-items-center '>
+        <header className='fixed-top border-bottom zup'>
+            <div className='containerjy d-flex justify-content-between align-items-center '>
                 <button className={`navBtn d-lg-none mx-2 ${toggleOpen ? 'act' : ''}`} onClick={hamClick}>
                     <i></i>
                     <i></i>
@@ -51,9 +51,10 @@ function Header() {
                 <div className='d-lg-flex '>
                     <ul className={`navmn d-lg-flex justify-content-between ${toggleOpen ? 'Bclick' : ''}`}>
                         <li className='before'>
-                            <a href="" className='d1a'>제품</a>
+                            <a href="" className='d1a '>제품</a>
+                            <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className='d2ul position-absolute d-lg-flex '>
-                                <li><a href="" className='d2a'>베스트</a></li>
+                                <li className='d2li'><a href="" className='d2a '>베스트</a></li>
                                 <li><a href="" className='d2a'>티 제품</a></li>
                                 <li><a href="" className='d2a'>티푸드</a></li>
                                 <li><a href="" className='d2a'>티웨어</a></li>
@@ -63,23 +64,26 @@ function Header() {
                         <li><a href="" className='d1a'>선물추천</a></li>
                         <li className='before'>
                             <a href="" className='d1a'>다다일상</a>
+                            <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className='d2ul position-absolute d-lg-flex '>
-                                <li><a href="" className='d2a'>다다일상 구독</a></li>
+                                <li><a href="" className='d2a '>다다일상 구독</a></li>
                                 <li><a href="" className='d2a'>정기배송 신청</a></li>
                             </ul>
                         </li>
                         <li className='before'>
                             <a href="" className='d1a'>브랜드</a>
+                            <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className='d2ul position-absolute d-lg-flex '>
-                                <li><a href="" className='d2a'>오설록 스토리</a></li>
+                                <li><a href="" className='d2a '>오설록 스토리</a></li>
                                 <li><a href="" className='d2a'>제주 티뮤지엄</a></li>
                                 <li><a href="" className='d2a'>매장 소개</a></li>
                             </ul>
                         </li>
                         <li className='before'>
                             <Link to="/event" className='d1a'>이벤트</Link>
+                            <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className='d2ul position-absolute d-lg-flex '>
-                                <li><a href="#none" className='d2a'>이달의 이벤트</a></li>
+                                <li><a href="#none" className='d2a '>이달의 이벤트</a></li>
                                 <li><a href="#none" className='d2a'>이벤트 공지</a></li>
                             </ul>
                         </li>

@@ -50,7 +50,7 @@ h6 {
 }
 
 .zup {
-    z-index: 99999;
+    z-index: 999999999;
 }
 
 .small_font {
@@ -59,6 +59,16 @@ h6 {
 
 .B_small_font {
     font-size: 22px;
+}
+
+.containerjy {
+    --bs-gutter-x: 10rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /////////////////header zone/////////////////
@@ -135,6 +145,23 @@ header {
         margin-bottom: 0;
     }
 
+    .backimg::after {
+        content: "";
+        background-image: url("../../public/img/banner/dadaLightPc_1.jpg");
+        background-size: contain;
+        width: 400px;
+        height: 200px;
+        position: absolute;
+        z-index: 999999999;
+        right: 100%;
+        top: 0;
+        display: block;
+    }
+
+    .d2li {
+        position: relative;
+    }
+
     .before {
         &::before {
             content: "";
@@ -150,15 +177,31 @@ header {
 
 
     .before:hover::before {
-        height: 200px;
+        height: 250px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .bnimg {
+        max-height: 0;
+        transition: 0.5s;
+        display: block;
+        position: absolute;
+        width: 400px;
+        top: 120%;
+        left: 20%;
+        opacity: 0;
     }
 
     .navmn {
 
-
         li {
             margin: 15px;
 
+
+            &:hover .bnimg {
+                max-height: 186.6px;
+                opacity: 1;
+            }
 
             &:hover .d1a {
 
@@ -177,8 +220,12 @@ header {
                 right: 0;
                 top: 100%;
                 transition: .5s;
-                width: 10000px;
+                // width: 10000px;
                 margin-left: 50vw;
+
+                &:hover {
+                    overflow: visible;
+                }
 
                 li {
                     font-family: $krFont;
@@ -221,10 +268,20 @@ header {
 
     }
 
+    .imgbnr {
+        left: 0;
+        right: 0;
+    }
+
     // 상단반응형
     @media (max-width: 1400px) {
         .d2ul {
             margin-left: 43vw !important;
+        }
+
+        .bnimg {
+            left: 15%;
+            width: 350px;
         }
     }
 
@@ -232,12 +289,22 @@ header {
         .d2ul {
             margin-left: 35vw !important;
         }
+
+        .bnimg {
+            left: 2%;
+            width: 350px;
+        }
     }
 
     @media (max-width: 992px) {
+        .containerjy {
+            --bs-gutter-x: 2rem;
+        }
+
         .navBtn i {
             background-color: $Bcolor;
         }
+
 
         .navmn {
             position: absolute;
@@ -399,8 +466,8 @@ header {
                 }
             }
 
-
         }
+
 
     }
 }
@@ -620,9 +687,11 @@ header {
     .mySwiper {
         color: $Wcolor;
 
+
         .textBox {
             transform: translate(10%, 80%);
             transition: 0.5s;
+            opacity: 0.7;
         }
 
         strong {
@@ -632,11 +701,10 @@ header {
 
         a {
             display: block;
-            background-color: #1B1B1B;
             background-size: cover;
             background-repeat: no-repeat;
-            max-width: 480px;
-            min-height: 375px;
+            width: 480px;
+            height: 370px;
         }
 
         .swiper-wrapper {
@@ -644,14 +712,16 @@ header {
             align-items: center;
         }
 
-        .swiper-slide-next {
+        .swiper-slide-active {
+
             a {
-                max-width: 500px;
-                min-height: 395px;
+                width: 520px;
+                height: 390px;
             }
 
             .textBox {
                 transform: translate(10%, 60%);
+                opacity: 1;
             }
         }
 
@@ -675,8 +745,6 @@ header {
             border: 0;
             background-color: transparent;
             transform: translateY(-50%);
-            // background-color: aquamarine;
-
         }
 
         .swiperNB::after {
@@ -701,6 +769,28 @@ header {
 
     }
 
+    @media (max-width:770px) {
+
+        .swiperNB::after,
+        .swiperPB::after {
+            display: none;
+        }
+    }
+
+    @media (min-width:992px) {
+
+        .swiperNB::after {
+            border: 2px solid $Wcolor !important;
+            border-right: 0 !important;
+            border-bottom: 0 !important;
+        }
+
+        .swiperPB::after {
+            border: 2px solid $Wcolor !important;
+            border-right: 0 !important;
+            border-bottom: 0 !important;
+        }
+    }
 }
 
 

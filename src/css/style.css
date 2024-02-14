@@ -41,7 +41,7 @@ h6 {
 }
 
 .zup {
-  z-index: 99999;
+  z-index: 999999999;
 }
 
 .small_font {
@@ -50,6 +50,16 @@ h6 {
 
 .B_small_font {
   font-size: 22px;
+}
+
+.containerjy {
+  --bs-gutter-x: 10rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header {
@@ -103,6 +113,21 @@ header .navBtn.act i:nth-child(3) {
 header ul {
   margin-bottom: 0;
 }
+header .backimg::after {
+  content: "";
+  background-image: url("../../public/img/banner/dadaLightPc_1.jpg");
+  background-size: contain;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  z-index: 999999999;
+  right: 100%;
+  top: 0;
+  display: block;
+}
+header .d2li {
+  position: relative;
+}
 header .before::before {
   content: "";
   position: absolute;
@@ -114,10 +139,25 @@ header .before::before {
   transition: 0.5s;
 }
 header .before:hover::before {
-  height: 200px;
+  height: 250px;
+  border-bottom: 1px solid #ccc;
+}
+header .bnimg {
+  max-height: 0;
+  transition: 0.5s;
+  display: block;
+  position: absolute;
+  width: 400px;
+  top: 120%;
+  left: 20%;
+  opacity: 0;
 }
 header .navmn li {
   margin: 15px;
+}
+header .navmn li:hover .bnimg {
+  max-height: 186.6px;
+  opacity: 1;
 }
 header .navmn li:hover .d1a {
   color: #6C801A;
@@ -132,8 +172,10 @@ header .navmn li .d2ul {
   right: 0;
   top: 100%;
   transition: 0.5s;
-  width: 10000px;
   margin-left: 50vw;
+}
+header .navmn li .d2ul:hover {
+  overflow: visible;
 }
 header .navmn li .d2ul li {
   font-family: "Noto Sans KR", sans-serif;
@@ -157,17 +199,32 @@ header .icoBox li img {
 header .icoBox .userIco img {
   width: 24px;
 }
+header .imgbnr {
+  left: 0;
+  right: 0;
+}
 @media (max-width: 1400px) {
   header .d2ul {
     margin-left: 43vw !important;
+  }
+  header .bnimg {
+    left: 15%;
+    width: 350px;
   }
 }
 @media (max-width: 1200px) {
   header .d2ul {
     margin-left: 35vw !important;
   }
+  header .bnimg {
+    left: 2%;
+    width: 350px;
+  }
 }
 @media (max-width: 992px) {
+  header .containerjy {
+    --bs-gutter-x: 2rem;
+  }
   header .navBtn i {
     background-color: #1B1B1B;
   }
@@ -457,6 +514,7 @@ header .icoBox .userIco img {
 .OsllcocLocation .mySwiper .textBox {
   transform: translate(10%, 80%);
   transition: 0.5s;
+  opacity: 0.7;
 }
 .OsllcocLocation .mySwiper strong {
   font-family: "seolleimcool-SemiBold";
@@ -464,22 +522,22 @@ header .icoBox .userIco img {
 }
 .OsllcocLocation .mySwiper a {
   display: block;
-  background-color: #1B1B1B;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 480px;
-  min-height: 375px;
+  width: 480px;
+  height: 370px;
 }
 .OsllcocLocation .mySwiper .swiper-wrapper {
   display: flex;
   align-items: center;
 }
-.OsllcocLocation .mySwiper .swiper-slide-next a {
-  max-width: 500px;
-  min-height: 395px;
+.OsllcocLocation .mySwiper .swiper-slide-active a {
+  width: 520px;
+  height: 390px;
 }
-.OsllcocLocation .mySwiper .swiper-slide-next .textBox {
+.OsllcocLocation .mySwiper .swiper-slide-active .textBox {
   transform: translate(10%, 60%);
+  opacity: 1;
 }
 .OsllcocLocation .mySwiper p {
   font-family: "Noto Sans KR", sans-serif;
@@ -515,6 +573,24 @@ header .icoBox .userIco img {
   border-right: 0;
   border-bottom: 0;
   transform: rotate(-45deg);
+}
+@media (max-width: 770px) {
+  .OsllcocLocation .swiperNB::after,
+  .OsllcocLocation .swiperPB::after {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .OsllcocLocation .swiperNB::after {
+    border: 2px solid #FFFEF1 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+  }
+  .OsllcocLocation .swiperPB::after {
+    border: 2px solid #FFFEF1 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+  }
 }
 
 footer {
