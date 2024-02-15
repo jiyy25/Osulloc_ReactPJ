@@ -10,6 +10,7 @@ import Bestseller from "./component/Bestseller";
 import Story from "./component/Story";
 import BestCategory from "./component/BestCategory";
 import Location from "./component/Location";
+import Subscribe from "./component/Subscribe";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Story></Story>
             <BestCategory></BestCategory>
             <Location datasrc={datasrc.store}></Location>
+            <Subscribe></Subscribe>
           </>
         }>
 

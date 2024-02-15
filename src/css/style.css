@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "DAEAM_LEE_TAE_JOON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/DAEAM_LEE_TAE_JOON.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 .mbt-100 {
   margin: 100px 0 !important;
 }
@@ -249,6 +255,10 @@ header .imgbnr {
   header .navmn .d2ul {
     position: unset !important;
     margin-left: 0 !important;
+    display: none;
+  }
+  header .navmn .d2ul.click {
+    display: block !important;
   }
   header .navmn .d2ul li {
     margin: 0.5rem 0;
@@ -424,6 +434,7 @@ header .imgbnr {
 }
 
 .osullocStory {
+  overflow-x: hidden;
   color: #FFFEF1;
 }
 .osullocStory .bgblack {
@@ -464,6 +475,9 @@ header .imgbnr {
 }
 .BestCategory .categoryBoxZone .cateBox a {
   font-size: 1.2rem;
+}
+.BestCategory .categoryBoxZone .cateBox a:hover {
+  color: #6C801A;
 }
 .BestCategory .categoryBoxZone .cateBox1 {
   background: url(/public/img/banner/osulloc39.jpg);
@@ -593,6 +607,61 @@ header .imgbnr {
   }
 }
 
+.subscriptZone {
+  overflow-x: hidden;
+}
+.subscriptZone .subscriptBnr {
+  font-family: "DAEAM_LEE_TAE_JOON";
+  background-image: url("/public/img/banner/main_banner_pc_1.png");
+  width: auto;
+  height: 660px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.subscriptZone .subscriptBnr .subText {
+  transform: translate(6rem, 8rem);
+}
+.subscriptZone .subscriptBnr .subText .subLogo {
+  background-image: url("/public/img/logo/logo.png");
+  width: 108px;
+  height: 221px;
+  background-repeat: no-repeat;
+  margin: 0 1rem 2rem;
+}
+.subscriptZone .subscriptBnr .subText .title {
+  font-size: 30px;
+  margin: 1rem;
+}
+.subscriptZone .subscriptBnr .subText .descP {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+.subscriptZone .subscriptBnrsm {
+  font-family: "DAEAM_LEE_TAE_JOON";
+  background-image: url("/public/img/mobile/mobile0.png");
+  width: auto;
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.subscriptZone .subscriptBnrsm .subText .subLogo {
+  background-image: url("/public/img/logo/logo.png");
+  width: 108px;
+  height: 221px;
+  background-repeat: no-repeat;
+  top: 53%;
+}
+.subscriptZone .subscriptBnrsm .subText .title {
+  font-size: 25px;
+  margin: 1rem;
+}
+.subscriptZone .subscriptBnrsm .subText .descP {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
 footer {
   font-weight: 100;
   font-family: "NanumSquare", sans-serif;
@@ -632,5 +701,109 @@ footer .qnafooter .largeF {
   }
   footer .adressdsec {
     font-size: 11px;
+  }
+}
+
+@media (max-width: 600px) {
+  .jyySwiper strong,
+  .OsllcocLocation strong {
+    font-size: 25px;
+  }
+  .jyySwiper p,
+  .OsllcocLocation p {
+    font-size: 18px;
+  }
+  .jyySwiper .moreBtn,
+  .OsllcocLocation .moreBtn {
+    margin: unset !important;
+  }
+  .videoZone h2,
+  .BestSeller h2,
+  .osullocStory h2,
+  .BestCategory h2,
+  .OsllcocLocation h2,
+  .subscriptZone h2 {
+    font-size: 30px;
+  }
+  .videoZone .smT,
+  .BestSeller .smT,
+  .osullocStory .smT,
+  .BestCategory .smT,
+  .OsllcocLocation .smT,
+  .subscriptZone .smT {
+    font-size: 20px;
+    margin: 1.5rem;
+  }
+  .OsllcocLocation strong {
+    font-size: 1.4rem !important;
+  }
+  .OsllcocLocation p {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 450px) {
+  .BestCategory,
+  .jyySwiper,
+  .videoZone,
+  .BestSeller,
+  .osullocStory,
+  .BestCategory,
+  .OsllcocLocation,
+  .subscriptZone {
+    margin-bottom: 70px !important;
+  }
+  .videoZone {
+    margin-top: 70px !important;
+  }
+  .jyySwiper .imgBox strong {
+    font-size: 19px;
+  }
+  .jyySwiper .imgBox p {
+    font-size: 15px;
+  }
+  .jyySwiper .moreBtn {
+    margin: unset !important;
+  }
+  .videoZone h2,
+  .BestSeller h2,
+  .osullocStory h2,
+  .BestCategory h2,
+  .subscriptZone h2 {
+    font-size: 25px;
+  }
+  .videoZone .smT,
+  .BestSeller .smT,
+  .osullocStory .smT,
+  .BestCategory .smT,
+  .subscriptZone .smT {
+    font-size: 17px;
+    margin: 1rem !important;
+  }
+  .BestSeller .bestProduct .productBox {
+    margin: 0 auto;
+  }
+  .osullocStory .descP {
+    font-size: 15px !important;
+  }
+  .BestCategory strong {
+    font-size: 18px !important;
+  }
+  .BestCategory p {
+    font-size: 15px !important;
+  }
+  .BestCategory a {
+    font-size: 16px !important;
+  }
+  .OsllcocLocation .descP {
+    font-size: 18px;
+  }
+  .OsllcocLocation strong {
+    font-size: 22px !important;
+  }
+  .OsllcocLocation p {
+    font-size: 18px !important;
+  }
+  .subscriptZone .title {
+    font-size: 21px !important;
   }
 }

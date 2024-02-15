@@ -7,12 +7,20 @@
 
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
+@font-face {
+    font-family: 'DAEAM_LEE_TAE_JOON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/DAEAM_LEE_TAE_JOON.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 $seolFont: 'seolleimcool-SemiBold';
 $Wcolor: #FFFEF1;
 $Bcolor: #1B1B1B;
 $krFont: "Noto Sans KR", sans-serif;
 $nanumFont: "NanumSquare", sans-serif;
+$dreamFont: 'DAEAM_LEE_TAE_JOON';
 
 .mbt-100 {
     margin: 100px 0 !important;
@@ -329,6 +337,11 @@ header {
             .d2ul {
                 position: unset !important;
                 margin-left: 0 !important;
+                display: none;
+
+                &.click {
+                    display: block !important;
+                }
 
                 li {
                     margin: 0.5rem 0;
@@ -345,7 +358,6 @@ header {
                     max-width: 200px;
                 }
             }
-
 
         }
     }
@@ -467,9 +479,8 @@ header {
             }
 
         }
-
-
     }
+
 }
 
 /////////////////Mov///////////////////////
@@ -509,6 +520,7 @@ header {
             transform: translateX(-50%);
         }
     }
+
 }
 
 
@@ -574,12 +586,14 @@ header {
 
         }
     }
+
 }
 
 
 //////////////////osullocStory//////////////////
 
 .osullocStory {
+    overflow-x: hidden;
     color: $Wcolor;
 
     .bgblack {
@@ -603,6 +617,7 @@ header {
         height: 470px;
         width: auto;
     }
+
 }
 
 /////////////BestCategory////////////////////
@@ -627,7 +642,12 @@ header {
 
             a {
                 font-size: 1.2rem;
+
+                &:hover {
+                    color: #6C801A;
+                }
             }
+
         }
 
 
@@ -678,6 +698,7 @@ header {
             }
         }
     }
+
 }
 
 //////////////////OsllcocLocation/////////////////
@@ -793,6 +814,74 @@ header {
     }
 }
 
+//////////////// subscriptZone//////////////
+
+.subscriptZone {
+    overflow-x: hidden;
+
+    .subscriptBnr {
+        font-family: 'DAEAM_LEE_TAE_JOON';
+        background-image: url("/public/img/banner/main_banner_pc_1.png");
+        width: auto;
+        height: 660px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        .subText {
+            transform: translate(6rem, 8rem);
+
+            .subLogo {
+                background-image: url("/public/img/logo/logo.png");
+                width: 108px;
+                height: 221px;
+                background-repeat: no-repeat;
+                margin: 0 1rem 2rem;
+            }
+
+            .title {
+                font-size: 30px;
+                margin: 1rem;
+            }
+
+            .descP {
+                font-size: 1.2rem;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .subscriptBnrsm {
+        font-family: 'DAEAM_LEE_TAE_JOON';
+        background-image: url("/public/img/mobile/mobile0.png");
+        width: auto;
+        height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+
+        .subText {
+
+            .subLogo {
+                background-image: url("/public/img/logo/logo.png");
+                width: 108px;
+                height: 221px;
+                background-repeat: no-repeat;
+                top: 53%;
+            }
+
+            .title {
+                font-size: 25px;
+                margin: 1rem;
+            }
+
+            .descP {
+                font-size: 1rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
 
 /////////////////footer////////////////////////
 
@@ -853,4 +942,152 @@ footer {
             font-size: 11px;
         }
     }
+}
+
+//모바일 반응형
+@media (max-width:600px) {
+
+    .jyySwiper,
+    .OsllcocLocation {
+
+        strong {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+
+        .moreBtn {
+            margin: unset !important;
+        }
+    }
+
+    .videoZone,
+    .BestSeller,
+    .osullocStory,
+    .BestCategory,
+    .OsllcocLocation,
+    .subscriptZone {
+        h2 {
+            font-size: 30px;
+        }
+
+        .smT {
+            font-size: 20px;
+            margin: 1.5rem;
+        }
+    }
+
+    .OsllcocLocation {
+        strong {
+            font-size: 1.4rem !important;
+        }
+
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+}
+
+
+@media (max-width:450px) {
+
+    .BestCategory,
+    .jyySwiper,
+    .videoZone,
+    .BestSeller,
+    .osullocStory,
+    .BestCategory,
+    .OsllcocLocation,
+    .subscriptZone {
+        margin-bottom: 70px !important;
+    }
+
+    .videoZone {
+        margin-top: 70px !important;
+    }
+
+
+    .jyySwiper {
+        .imgBox {
+            strong {
+                font-size: 19px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+        .moreBtn {
+            margin: unset !important;
+        }
+    }
+
+    .videoZone,
+    .BestSeller,
+    .osullocStory,
+    .BestCategory,
+    .subscriptZone {
+        h2 {
+            font-size: 25px;
+        }
+
+        .smT {
+            font-size: 17px;
+            margin: 1rem !important;
+        }
+    }
+
+    .BestSeller {
+        .bestProduct {
+            .productBox {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .osullocStory {
+        .descP {
+            font-size: 15px !important;
+        }
+    }
+
+    .BestCategory {
+        strong {
+            font-size: 18px !important;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+
+        a {
+            font-size: 16px !important;
+        }
+    }
+
+    .OsllcocLocation {
+        .descP {
+            font-size: 18px;
+
+        }
+
+        strong {
+            font-size: 22px !important;
+        }
+
+        p {
+            font-size: 18px !important;
+        }
+    }
+
+    .subscriptZone {
+        .title {
+            font-size: 21px !important;
+        }
+    }
+
 }

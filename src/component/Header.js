@@ -11,8 +11,13 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     const [toggleOpen, setToggleOpen] = useState(false);
+    const [ulOpen, setulOpen] = useState(false);
     const hamClick = () => {
         setToggleOpen(!toggleOpen)
+    }
+    const menuClick = (event) => {
+        event.preventDefault();
+        setulOpen(!ulOpen) 
     }
 
     React.useEffect(() => {
@@ -50,10 +55,10 @@ function Header() {
                 </h1>
                 <div className='d-lg-flex '>
                     <ul className={`navmn d-lg-flex justify-content-between ${toggleOpen ? 'Bclick' : ''}`}>
-                        <li className='before'>
-                            <a href="" className='d1a '>제품</a>
+                        <li className='before '>
+                            <a href="" className='d1a' onClick={menuClick}>제품</a>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
-                            <ul className='d2ul position-absolute d-lg-flex '>
+                            <ul className={`d2ul position-absolute d-lg-flex ${ulOpen ? 'click' : ''}`}>
                                 <li className='d2li'><a href="" className='d2a '>베스트</a></li>
                                 <li><a href="" className='d2a'>티 제품</a></li>
                                 <li><a href="" className='d2a'>티푸드</a></li>
@@ -63,26 +68,26 @@ function Header() {
                         </li>
                         <li><a href="" className='d1a'>선물추천</a></li>
                         <li className='before'>
-                            <a href="" className='d1a'>다다일상</a>
+                            <a href="" className='d1a' onClick={menuClick}>다다일상</a>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
-                            <ul className='d2ul position-absolute d-lg-flex '>
+                            <ul className={`d2ul position-absolute d-lg-flex ${ulOpen ? 'click' : ''}`}>
                                 <li><a href="" className='d2a '>다다일상 구독</a></li>
                                 <li><a href="" className='d2a'>정기배송 신청</a></li>
                             </ul>
                         </li>
                         <li className='before'>
-                            <a href="" className='d1a'>브랜드</a>
+                            <a href="" className='d1a' onClick={menuClick}>브랜드</a>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
-                            <ul className='d2ul position-absolute d-lg-flex '>
+                            <ul className={`d2ul position-absolute d-lg-flex ${ulOpen ? 'click' : ''}`}>
                                 <li><a href="" className='d2a '>오설록 스토리</a></li>
                                 <li><a href="" className='d2a'>제주 티뮤지엄</a></li>
                                 <li><a href="" className='d2a'>매장 소개</a></li>
                             </ul>
                         </li>
                         <li className='before'>
-                            <Link to="/event" className='d1a'>이벤트</Link>
+                            <Link to="/event" className='d1a' onClick={menuClick}>이벤트</Link>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
-                            <ul className='d2ul position-absolute d-lg-flex '>
+                            <ul className={`d2ul position-absolute d-lg-flex ${ulOpen ? 'click' : ''}`}>
                                 <li><a href="#none" className='d2a '>이달의 이벤트</a></li>
                                 <li><a href="#none" className='d2a'>이벤트 공지</a></li>
                             </ul>
@@ -94,7 +99,7 @@ function Header() {
                         <li className='d-none d-lg-block me-lg-0'><a href=""><IoSearch size={25} /></a></li>
                     </ul>
                 </div>
-            </div>
+            </div >
         </header >
     )
 }

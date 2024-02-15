@@ -6,7 +6,7 @@ function ProductBox({ datasrc }) {
             {
                 datasrc.slice(0, 4).map((v, i) => {
                     return (
-                        <div className='productBox col-lg-3 col-6 mb-5'>
+                        <div className='productBox col-lg-3 col-6 mb-4 mb-sm-5'>
                             <a href="">
                                 <img src={v.imgsrc} alt={v.alt} />
                             </a>
