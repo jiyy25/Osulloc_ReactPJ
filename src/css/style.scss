@@ -215,10 +215,6 @@ header {
 
                 color: #6C801A;
 
-
-                .d2ul {
-                    max-height: 200px;
-                }
             }
 
             .d2ul {
@@ -228,7 +224,6 @@ header {
                 right: 0;
                 top: 100%;
                 transition: .5s;
-                // width: 10000px;
                 margin-left: 50vw;
 
                 &:hover {
@@ -305,6 +300,11 @@ header {
     }
 
     @media (max-width: 992px) {
+
+        .d2ul {
+            max-height: unset !important;
+        }
+
         .containerjy {
             --bs-gutter-x: 2rem;
         }
@@ -346,7 +346,9 @@ header {
                 li {
                     margin: 0.5rem 0;
                     border: 0;
+
                 }
+
             }
 
 
@@ -360,6 +362,7 @@ header {
             }
 
         }
+
     }
 
 }

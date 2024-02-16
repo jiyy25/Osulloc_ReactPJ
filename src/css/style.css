@@ -168,9 +168,6 @@ header .navmn li:hover .bnimg {
 header .navmn li:hover .d1a {
   color: #6C801A;
 }
-header .navmn li:hover .d1a .d2ul {
-  max-height: 200px;
-}
 header .navmn li .d2ul {
   max-height: 0;
   overflow: hidden;
@@ -228,6 +225,9 @@ header .imgbnr {
   }
 }
 @media (max-width: 992px) {
+  header .d2ul {
+    max-height: unset !important;
+  }
   header .containerjy {
     --bs-gutter-x: 2rem;
   }
