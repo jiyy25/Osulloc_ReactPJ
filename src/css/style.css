@@ -390,9 +390,6 @@ header .imgbnr {
   }
 }
 
-.BestSeller .bestProduct {
-  text-align: center;
-}
 @media (max-width: 992px) {
   .BestSeller .productBox {
     padding: 0 !important;
@@ -925,4 +922,19 @@ footer .qnafooter .largeF {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+}
+.shopBest .bestnum {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #5A7E62;
+  color: white;
+}
+
+.bestnum2 {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-color: #f88f75;
+  color: white;
 }

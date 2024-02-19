@@ -10,7 +10,7 @@ function Bestseller(props) {
             <BigTitle>베스트 셀러</BigTitle>
             <SmallTitle className='smT'>오늘은 어떤 차를 마셔볼까요?</SmallTitle>
             <div className='bestProduct row justify-content-between align-items-center'>
-                <ProductBox datasrc={props.datasrc} cardnum={4}></ProductBox>
+                <ProductBox datasrc={props.datasrc} cardnum={4} bestPage={'Seller'}></ProductBox>
             </div>
             <Link to='/shop'><BmoreBtn>더보기</BmoreBtn></Link>
         </div>

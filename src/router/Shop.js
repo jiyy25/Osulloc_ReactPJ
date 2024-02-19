@@ -2,6 +2,7 @@ import React from 'react'
 import { H3Title, SmallTitle } from '../styled/Title'
 import ProductBox from '../component/ProductBox'
 
+
 function Shop(props) {
     return (
         <div className='shopBest mb-100'>
@@ -12,7 +13,7 @@ function Shop(props) {
                 <H3Title>베스트셀러</H3Title>
                 <SmallTitle>이달의 베스트 오설록</SmallTitle>
                 <div className='bestProduct row justify-content-between align-items-center'>
-                    <ProductBox datasrc={props.datasrc} cardnum={12} ></ProductBox>
+                    <ProductBox datasrc={props.datasrc} cardnum={12} bestPage={'Shop'}></ProductBox>
                 </div>
             </div>
         </div >
