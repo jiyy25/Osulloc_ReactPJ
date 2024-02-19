@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { MoreBtn, BmoreBtn } from '../styled/Btns';
 import { BigTitle, SmallTitle } from '../styled/Title';
 import "@fontsource/noto-sans-kr/200.css"
@@ -15,8 +16,8 @@ const Mov = () => {
                 <div className='descBox'>
                     <BigTitle className='panna'>세상 모든 커플의 사랑을 응원하는<br />
                         말차 판나코타</BigTitle>
-                    <MoreBtn className=' d-none d-lg-block'>자세히보기</MoreBtn>
-                    <BmoreBtn className='d-lg-none'>자세히보기</BmoreBtn>
+                    <Link to="/event"><MoreBtn className=' d-none d-lg-block'>자세히보기</MoreBtn></Link>
+                    <Link to="/event"><BmoreBtn className='d-lg-none'>자세히보기</BmoreBtn></Link>
                 </div>
             </div>
         </div>

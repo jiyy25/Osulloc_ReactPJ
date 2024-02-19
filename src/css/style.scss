@@ -26,6 +26,10 @@ $dreamFont: 'DAEAM_LEE_TAE_JOON';
     margin: 100px 0 !important;
 }
 
+.mt-150 {
+    margin-top: 150px!important;
+}
+
 .mb-100 {
     margin-bottom: 100px !important;
 }
@@ -954,11 +958,11 @@ footer {
     .OsllcocLocation {
 
         strong {
-            font-size: 25px;
+            font-size: 25px !important;
         }
 
         p {
-            font-size: 18px;
+            font-size: 18px !important;
         }
 
 
@@ -983,13 +987,28 @@ footer {
         }
     }
 
-    .OsllcocLocation {
+    .OsllcocLocation,
+    .BestCategory {
         strong {
             font-size: 1.4rem !important;
         }
 
         p {
             font-size: 1.2rem !important;
+        }
+    }
+
+    .BestCategory {
+        strong {
+            font-size: 1.2rem !important;
+        }
+
+        p {
+            font-size: 1rem !important;
+        }
+
+        a {
+            font-size: 1.1rem !important;
         }
     }
 }
@@ -1093,4 +1112,113 @@ footer {
         }
     }
 
+}
+
+//서브페이지
+//이벤트
+.o_event {
+    font-family: $krFont;
+
+    .eventIcon {
+        width: 60px;
+    }
+
+    .racipeArea,
+    .togetherPd,
+    .review {
+        h3::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: #CE7978;
+            border-radius: 50%;
+            display: block;
+            margin-right: 0.5rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        span {
+            font-size: 1.1rem;
+            display: inline-block;
+        }
+
+        .number {
+            margin-right: 0.5rem;
+        }
+
+        .smT {
+            font-size: 1.4rem;
+        }
+
+        .smTen {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+    }
+
+    .imgur {
+        img {
+            width: 450px;
+        }
+
+    }
+
+    .gotoPd {
+        width: 320px;
+
+        span,
+        p {
+            font-size: 1.4rem;
+            margin: 0.2rem 0;
+        }
+    }
+
+    a.abtn {
+        font-size: 1.2rem;
+        transition: .5s;
+
+        &:hover {
+            color: #6C801A;
+            border-color: #6C801A !important;
+        }
+    }
+
+    .review {
+        .reveiwIcon {
+            width: 40px;
+        }
+    }
+
+    .reviewSwiper {
+
+        .imgBox {
+
+            img {
+                width: 380px;
+                height: 295px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                object-fit: cover;
+            }
+        }
+
+        .textBox {
+            background-color: #ACBEA9;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        strong {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
 }

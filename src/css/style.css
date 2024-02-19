@@ -15,6 +15,10 @@
   margin: 100px 0 !important;
 }
 
+.mt-150 {
+  margin-top: 150px !important;
+}
+
 .mb-100 {
   margin-bottom: 100px !important;
 }
@@ -707,11 +711,11 @@ footer .qnafooter .largeF {
 @media (max-width: 600px) {
   .jyySwiper strong,
   .OsllcocLocation strong {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   .jyySwiper p,
   .OsllcocLocation p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   .jyySwiper .moreBtn,
   .OsllcocLocation .moreBtn {
@@ -734,11 +738,22 @@ footer .qnafooter .largeF {
     font-size: 20px;
     margin: 1.5rem;
   }
-  .OsllcocLocation strong {
+  .OsllcocLocation strong,
+  .BestCategory strong {
     font-size: 1.4rem !important;
   }
-  .OsllcocLocation p {
+  .OsllcocLocation p,
+  .BestCategory p {
     font-size: 1.2rem !important;
+  }
+  .BestCategory strong {
+    font-size: 1.2rem !important;
+  }
+  .BestCategory p {
+    font-size: 1rem !important;
+  }
+  .BestCategory a {
+    font-size: 1.1rem !important;
   }
 }
 @media (max-width: 450px) {
@@ -806,4 +821,92 @@ footer .qnafooter .largeF {
   .subscriptZone .title {
     font-size: 21px !important;
   }
+}
+.o_event {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.o_event .eventIcon {
+  width: 60px;
+}
+.o_event .racipeArea h3::before,
+.o_event .togetherPd h3::before,
+.o_event .review h3::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #CE7978;
+  border-radius: 50%;
+  display: block;
+  margin-right: 0.5rem;
+}
+.o_event .racipeArea p,
+.o_event .togetherPd p,
+.o_event .review p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.o_event .racipeArea span,
+.o_event .togetherPd span,
+.o_event .review span {
+  font-size: 1.1rem;
+  display: inline-block;
+}
+.o_event .racipeArea .number,
+.o_event .togetherPd .number,
+.o_event .review .number {
+  margin-right: 0.5rem;
+}
+.o_event .racipeArea .smT,
+.o_event .togetherPd .smT,
+.o_event .review .smT {
+  font-size: 1.4rem;
+}
+.o_event .racipeArea .smTen,
+.o_event .togetherPd .smTen,
+.o_event .review .smTen {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.o_event .racipeArea li,
+.o_event .togetherPd li,
+.o_event .review li {
+  margin: 1rem 0;
+}
+.o_event .imgur img {
+  width: 450px;
+}
+.o_event .gotoPd {
+  width: 320px;
+}
+.o_event .gotoPd span,
+.o_event .gotoPd p {
+  font-size: 1.4rem;
+  margin: 0.2rem 0;
+}
+.o_event a.abtn {
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+.o_event a.abtn:hover {
+  color: #6C801A;
+  border-color: #6C801A !important;
+}
+.o_event .review .reveiwIcon {
+  width: 40px;
+}
+.o_event .reviewSwiper .imgBox img {
+  width: 380px;
+  height: 295px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.o_event .reviewSwiper .textBox {
+  background-color: #ACBEA9;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.o_event .reviewSwiper strong {
+  font-size: 1.2rem;
+  font-weight: 400;
 }

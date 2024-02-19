@@ -92,7 +92,7 @@ function Header() {
                             <span className='d1a' onClick={() => { toggleMenu("이벤트") }}>이벤트</span>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "이벤트" ? 'click' : ''}`}>
-                                <li><a href="#none" className='d2a '>이달의 이벤트</a></li>
+                                <li><Link to="/event" className='d2a '>이달의 이벤트</Link></li>
                                 <li><a href="#none" className='d2a'>이벤트 공지</a></li>
                             </ul>
                         </li>
