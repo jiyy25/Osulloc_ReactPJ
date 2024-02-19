@@ -11,6 +11,7 @@ import BestCategory from "./component/BestCategory";
 import Location from "./component/Location";
 import Subscribe from "./component/Subscribe";
 import Event from "./router/Event";
+import Shop from "./router/Shop";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
         </Route>
         <Route path="/event" element={<Event datasrc={datasrc.reveiw} />}></Route>
+        <Route path="/shop" element={<Shop datasrc={datasrc.product} />}></Route>
 
       </Routes>
       <Footer></Footer>

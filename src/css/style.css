@@ -393,27 +393,33 @@ header .imgbnr {
 .BestSeller .bestProduct {
   text-align: center;
 }
-.BestSeller .bestProduct .productBox {
+@media (max-width: 992px) {
+  .BestSeller .productBox {
+    padding: 0 !important;
+  }
+}
+
+.productBox {
   max-width: 294px;
   min-width: 205px;
   font-family: "Noto Sans KR", sans-serif;
 }
-.BestSeller .bestProduct .productBox img {
+.productBox img {
   width: 100%;
 }
-.BestSeller .bestProduct .productBox .textBox {
+.productBox .textBox {
   width: 100%;
 }
-.BestSeller .bestProduct .productBox .textBox .title {
+.productBox .textBox .title {
   font-weight: 400;
   font-size: 18px !important;
 }
-.BestSeller .bestProduct .productBox .textBox .price {
+.productBox .textBox .price {
   font-weight: 300;
   font-size: 18px !important;
 }
-.BestSeller .bestProduct .productBox .textBox .title,
-.BestSeller .bestProduct .productBox .textBox .price {
+.productBox .textBox .title,
+.productBox .textBox .price {
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -421,7 +427,7 @@ header .imgbnr {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.BestSeller .bestProduct .productBox .desc {
+.productBox .desc {
   font-size: 14px;
   display: block;
   width: 100%;
@@ -430,11 +436,6 @@ header .imgbnr {
   text-overflow: ellipsis;
   overflow: hidden;
   font-weight: 300;
-}
-@media (max-width: 992px) {
-  .BestSeller .productBox {
-    padding: 0 !important;
-  }
 }
 
 .osullocStory {
@@ -909,4 +910,19 @@ footer .qnafooter .largeF {
 .o_event .reviewSwiper strong {
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.shopBest {
+  margin-top: 76.8px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.shopBest h2 {
+  font-weight: 600 !important;
+}
+.shopBest .back_img {
+  width: 100vw;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }

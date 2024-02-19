@@ -27,7 +27,7 @@ $dreamFont: 'DAEAM_LEE_TAE_JOON';
 }
 
 .mt-150 {
-    margin-top: 150px!important;
+    margin-top: 150px !important;
 }
 
 .mb-100 {
@@ -538,52 +538,6 @@ header {
     .bestProduct {
         text-align: center;
 
-        .productBox {
-            // min-width: 280px;
-            max-width: 294px;
-            min-width: 205px;
-            font-family: $krFont;
-
-            img {
-                width: 100%;
-            }
-
-            .textBox {
-                width: 100%;
-
-                .title {
-                    font-weight: 400;
-                    font-size: 18px !important;
-                }
-
-                .price {
-                    font-weight: 300;
-                    font-size: 18px !important;
-                }
-
-                .title,
-                .price {
-                    display: block;
-                    width: 100%;
-                    font-size: 1rem;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
-                    overflow: hidden;
-                }
-            }
-
-            .desc {
-                font-size: 14px;
-                display: block;
-                width: 100%;
-                font-size: 1rem;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                font-weight: 300;
-            }
-
-        }
     }
 
     @media (max-width:992px) {
@@ -592,6 +546,53 @@ header {
             padding: 0 !important;
 
         }
+    }
+
+}
+
+.productBox {
+    // min-width: 280px;
+    max-width: 294px;
+    min-width: 205px;
+    font-family: $krFont;
+
+    img {
+        width: 100%;
+    }
+
+    .textBox {
+        width: 100%;
+
+        .title {
+            font-weight: 400;
+            font-size: 18px !important;
+        }
+
+        .price {
+            font-weight: 300;
+            font-size: 18px !important;
+        }
+
+        .title,
+        .price {
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    .desc {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-weight: 300;
     }
 
 }
@@ -1220,5 +1221,23 @@ footer {
             font-size: 1.2rem;
             font-weight: 400;
         }
+    }
+}
+
+//shop_best
+.shopBest {
+    margin-top: 76.8px;
+    font-family: $krFont;
+
+    h2 {
+        font-weight: 600 !important;
+    }
+
+    .back_img {
+        width: 100vw;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50%;
     }
 }

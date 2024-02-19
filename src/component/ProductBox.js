@@ -1,10 +1,11 @@
 import React from 'react'
 
-function ProductBox({ datasrc }) {
+function ProductBox({ datasrc, cardnum }) {
     return (
         <>
             {
-                datasrc.slice(0, 4).map((v, i) => {
+                //cardnum으로 slice할 숫자를 받아올 수 있다.
+                datasrc.slice(0, cardnum).map((v, i) => {
                     return (
                         <div className='productBox col-lg-3 col-6 mb-4 mb-sm-5'>
                             <a href="">

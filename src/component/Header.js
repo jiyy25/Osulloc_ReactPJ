@@ -63,7 +63,7 @@ function Header() {
                             }>제품</span>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "제품" ? 'click' : ''}`}>
-                                <li className='d2li'><a href="" className='d2a '>베스트</a></li>
+                                <li className='d2li'><Link to='/Shop' className='d2a '>베스트</Link></li>
                                 <li><a href="" className='d2a'>티 제품</a></li>
                                 <li><a href="" className='d2a'>티푸드</a></li>
                                 <li><a href="" className='d2a'>티웨어</a></li>
