@@ -12,7 +12,7 @@ function Bestseller(props) {
             <div className='bestProduct row justify-content-between align-items-center'>
                 <ProductBox datasrc={props.datasrc} cardnum={4} bestPage={'Seller'}></ProductBox>
             </div>
-            <Link to='/shop'><BmoreBtn>더보기</BmoreBtn></Link>
+            <Link to='/shop/best'><BmoreBtn>더보기</BmoreBtn></Link>
         </div>
 
     )

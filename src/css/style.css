@@ -909,26 +909,40 @@ footer .qnafooter .largeF {
   font-weight: 400;
 }
 
-.shopBest {
+.shopBest,
+.shop {
   margin-top: 76.8px;
   font-family: "Noto Sans KR", sans-serif;
 }
-.shopBest h2 {
+.shopBest h2,
+.shop h2 {
   font-weight: 600 !important;
 }
-.shopBest .back_img {
+.shopBest .back_img,
+.shop .back_img {
   width: 100vw;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 }
-.shopBest .bestnum {
+.shopBest .bestnum,
+.shop .bestnum {
   width: 30px;
   height: 30px;
   display: block;
   background-color: #5A7E62;
   color: white;
+}
+
+.category li {
+  border-radius: 20px;
+  background-color: #5A7E62;
+  color: white;
+  width: 70px;
+  text-align: center;
+  padding: 0.5rem 0;
+  margin: 0.8rem;
 }
 
 .bestnum2 {

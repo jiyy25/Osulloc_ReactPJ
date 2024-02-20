@@ -12,6 +12,7 @@ import Location from "./component/Location";
 import Subscribe from "./component/Subscribe";
 import Event from "./router/Event";
 import Shop from "./router/Shop";
+import ShopBest from "./router/ShopBest";
 
 function App() {
   return (
@@ -32,9 +33,9 @@ function App() {
 
         </Route>
         <Route path="/event" element={<Event datasrc={datasrc.reveiw} />}></Route>
-        <Route path="/shop" element={<Shop datasrc={datasrc.product} />}></Route>
-
-      </Routes>
+        <Route path="/shop/best" element={<ShopBest datasrc={datasrc.product} />}></Route>
+        <Route path="/shop/tea" element={<Shop datasrc={datasrc} />}></Route>
+      </Routes >
       <Footer></Footer>
     </>
   );

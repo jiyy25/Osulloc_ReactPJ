@@ -63,11 +63,11 @@ function Header() {
                             }>제품</span>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "제품" ? 'click' : ''}`}>
-                                <li className='d2li'><Link to='/Shop' className='d2a '>베스트</Link></li>
-                                <li><a href="" className='d2a'>티 제품</a></li>
-                                <li><a href="" className='d2a'>티푸드</a></li>
-                                <li><a href="" className='d2a'>티웨어</a></li>
-                                <li><a href="" className='d2a'>라이프 스타일</a></li>
+                                <li className='d2li'><Link to='/Shop/best' className='d2a '>베스트</Link></li>
+                                <li><Link to="/shop/tea" className='d2a'>티 제품</Link></li>
+                                <li><Link to="/shop" className='d2a'>티푸드</Link></li>
+                                <li><Link to="" className='d2a'>티웨어</Link></li>
+                                <li><Link to="" className='d2a'>라이프 스타일</Link></li>
                             </ul>
                         </li>
                         <li><span href="" className='d1a'>선물추천</span></li>
@@ -75,17 +75,17 @@ function Header() {
                             <span href="" className='d1a' onClick={() => { toggleMenu("다다일상") }}>다다일상</span>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "다다일상" ? 'click' : ''}`}>
-                                <li><a href="" className='d2a '>다다일상 구독</a></li>
-                                <li><a href="" className='d2a'>정기배송 신청</a></li>
+                                <li><Link to="" className='d2a '>다다일상 구독</Link></li>
+                                <li><Link to="" className='d2a'>정기배송 신청</Link></li>
                             </ul>
                         </li>
                         <li className='before'>
                             <span href="" className='d1a' onClick={() => { toggleMenu("브랜드") }}>브랜드</span>
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "브랜드" ? 'click' : ''}`}>
-                                <li><a href="" className='d2a '>오설록 스토리</a></li>
-                                <li><a href="" className='d2a'>제주 티뮤지엄</a></li>
-                                <li><a href="" className='d2a'>매장 소개</a></li>
+                                <li><Link to="" className='d2a '>오설록 스토리</Link></li>
+                                <li><Link to="" className='d2a'>제주 티뮤지엄</Link></li>
+                                <li><Link to="" className='d2a'>매장 소개</Link></li>
                             </ul>
                         </li>
                         <li className='before'>
@@ -93,14 +93,14 @@ function Header() {
                             <img src="./img/banner/dadaLightPc_1.jpg" alt="" className='bnimg' />
                             <ul className={`d2ul position-absolute d-lg-flex ${activeMenu === "이벤트" ? 'click' : ''}`}>
                                 <li><Link to="/event" className='d2a '>이달의 이벤트</Link></li>
-                                <li><a href="#none" className='d2a'>이벤트 공지</a></li>
+                                <li><Link to="#none" className='d2a'>이벤트 공지</Link></li>
                             </ul>
                         </li>
                     </ul>
                     <ul className='icoBox d-flex ms-lg-5'>
-                        <li><a href=""><IoBagOutline size={25} /></a></li>
-                        <li className='userIco'><a href=""><RiUserHeartLine size={25} /></a></li>
-                        <li className='d-none d-lg-block me-lg-0'><a href=""><IoSearch size={25} /></a></li>
+                        <li><Link to=""><IoBagOutline size={25} /></Link></li>
+                        <li className='userIco'><Link to=""><RiUserHeartLine size={25} /></Link></li>
+                        <li className='d-none d-lg-block me-lg-0'><Link to=""><IoSearch size={25} /></Link></li>
                     </ul>
                 </div>
             </div >

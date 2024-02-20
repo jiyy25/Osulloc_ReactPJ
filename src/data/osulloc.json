@@ -320,5 +320,35 @@
             "date": "2024.2.1",
             "re_text": "쿠키 만들었어요!"
         }
+    ],
+    "shop": {
+        "tea_section": [
+            {
+                "banner_img": "https://i.ibb.co/KmhBRJd/banner-teaprod.jpg",
+                "cate_title": "티제품",
+                "cate_desc": ""
+            }
+        ],
+        "food_section": [
+            {
+                "banner_img": "https://i.ibb.co/9gMTH70/banner-teafood",
+                "cate_title": "티푸드",
+                "cate_desc": ""
+            }
+        ]
+    },
+    "category": [
+        {
+            "cate_title": "전체"
+        },
+        {
+            "cate_title": "세트"
+        },
+        {
+            "cate_title": "티백"
+        },
+        {
+            "cate_title": "콤부차"
+        }
     ]
 }

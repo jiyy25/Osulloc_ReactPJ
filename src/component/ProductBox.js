@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ProductBox({ datasrc, cardnum, bestPage }) {
     return (
@@ -8,16 +9,16 @@ function ProductBox({ datasrc, cardnum, bestPage }) {
                 //특정 페이지에서는 특정스타일을 추가함
                 datasrc.slice(0, cardnum).map((v, i) => {
                     return (
-                        <div className='productBox col-lg-3 col-6 mb-4 mb-sm-5 text-center position-relative'>
+                        <div className='productBox col-lg-3 col-6 mx-auto mb-4 mb-sm-5 text-center position-relative' key={i}>
                             <span className={`position-absolute top-0
-                            ${bestPage === "Shop" ? 'bestnum' :
+                            ${bestPage === "best" ? 'bestnum' :
                                     (bestPage === "Seller" ? 'bestnum2' : 'd-none')}
                             `}>{i + 1}</span>
-                            <a href="">
+                            <Link to="">
                                 <img src={v.imgsrc} alt={v.alt} />
-                            </a>
+                            </Link>
                             <div className='textBox mt-2'>
-                                <div className='title'><a href="">{v.title}</a></div>
+                                <div className='title'><Link to="">{v.title}</Link></div>
                                 <div className='desc'>{v.text}</div>
                                 <div className='price'>{v.price}원</div>
                             </div>
