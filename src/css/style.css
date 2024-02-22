@@ -920,7 +920,7 @@ footer .qnafooter .largeF {
 }
 .shopBest .back_img,
 .shop .back_img {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -951,4 +951,23 @@ footer .qnafooter .largeF {
   display: block;
   background-color: #f88f75;
   color: white;
+}
+
+.o_dada {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.o_dada .dada .won {
+  font-size: 1.3rem;
+}
+.o_dada .dada .dadaform {
+  max-width: 500px;
+}
+.o_dada .subscribe_dada img {
+  width: 300px;
+}
+.o_dada .subscribe_dada span {
+  font-size: 1.3rem;
+}
+.o_dada .subscribe_dada p {
+  font-size: 1.2rem;
 }

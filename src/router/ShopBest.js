@@ -5,7 +5,6 @@ import ProductBox from '../component/ProductBox'
 
 function ShopBest(props) {
 
-
     return (
         <div className='shopBest mb-100'>
             <div className='back_img position-relative' style={{ backgroundImage: "url('/img/banner/best_banner.jpg')" }}>

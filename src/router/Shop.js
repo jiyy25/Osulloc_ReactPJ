@@ -7,13 +7,13 @@ function Shop(props) {
     const handleCategoryClick = (idx) => {
         setTap(idx)
     }
-    const filterProducts = props.datasrc.product.filter((product) => {
-        if (tap === 0) {
-            return true;
-        } else {
-            return product.category === props.datasrc
-        }
-    })
+    // const filterProducts = props.datasrc.product.filter((product) => {
+    //     if (tap === 0) {
+    //         return true;
+    //     } else {
+    //         return product.category === props.datasrc
+    //     }
+    // })
     return (
         <div className='shop mb-100'>
             <div className='back_img position-relative' style={{ backgroundImage: "url('/img/banner/best_banner.jpg')" }}>

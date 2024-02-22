@@ -13,6 +13,7 @@ import Subscribe from "./component/Subscribe";
 import Event from "./router/Event";
 import Shop from "./router/Shop";
 import ShopBest from "./router/ShopBest";
+import Subscribepage from "./router/Subscribepage";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/event" element={<Event datasrc={datasrc.reveiw} />}></Route>
         <Route path="/shop/best" element={<ShopBest datasrc={datasrc.product} />}></Route>
         <Route path="/shop/tea" element={<Shop datasrc={datasrc} />}></Route>
+        <Route path="/dada" element={<Subscribepage datasrc={datasrc}></Subscribepage>}></Route>
       </Routes >
       <Footer></Footer>
     </>

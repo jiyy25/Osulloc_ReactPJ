@@ -1230,7 +1230,7 @@ footer {
     }
 
     .back_img {
-        width: 100vw;
+        width: 100%;
         height: 300px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1266,4 +1266,31 @@ footer {
     display: block;
     background-color: #f88f75;
     color: white;
+}
+
+//폼태그영역
+.o_dada {
+    font-family: $krFont;
+
+    .dada {
+        .won {
+            font-size: 1.3rem;
+        }
+
+        .dadaform {
+            max-width: 500px;
+        }
+    }
+
+    .subscribe_dada {
+        img {
+            width: 300px;
+        }
+        span{
+            font-size: 1.3rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
 }
